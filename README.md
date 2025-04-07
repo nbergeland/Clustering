@@ -106,7 +106,7 @@ plt.subplots_adjust(top=0.9)  # Adjust for the suptitle
 plt.savefig('warehouse_clusters.png')  # Save the figure
 plt.show()
 
-![Plotly Visualization: Simulated Regression](MULTIDEND.png)
+![Plotly Visualization: Simulated Regression](MULTICLUST.png)
 
 # 5. CLUSTER ANALYSIS
 print("\nCluster Analysis:")
