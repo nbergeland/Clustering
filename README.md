@@ -1,17 +1,18 @@
 #Clustering Warehouses
+Cluster warehouses by daily shipments, distance to distribution center, inventory turnover, and labor cost.
 
-import numpy as np
-import pandas as pd
-from sklearn.cluster import AgglomerativeClustering
-from scipy.cluster.hierarchy import dendrogram, linkage
-import matplotlib.pyplot as plt
-from sklearn.preprocessing import StandardScaler
+  import numpy as np
+  import pandas as pd
+  from sklearn.cluster import AgglomerativeClustering
+  from scipy.cluster.hierarchy import dendrogram, linkage
+  import matplotlib.pyplot as plt
+  from sklearn.preprocessing import StandardScaler
 
-# 1. DATA CREATION
-np.random.seed(42)  # For reproducibility
-warehouse_data = np.random.rand(50, 4)
-df = pd.DataFrame(warehouse_data, 
-                  columns=['daily_shipments','dist_main_dc','inventory_turnover','labor_cost'])
+  # 1. DATA CREATION
+  np.random.seed(42)  # For reproducibility
+  warehouse_data = np.random.rand(50, 4)
+  df = pd.DataFrame(warehouse_data, 
+                    columns=['daily_shipments','dist_main_dc','inventory_turnover','labor_cost'])
 
 # 1b. SCALE THE DATA (recommended for clustering)
 scaler = StandardScaler()
