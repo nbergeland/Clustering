@@ -1,5 +1,6 @@
-#Clustering Warehouses
+# Clustering Warehouses
 Cluster warehouses by daily shipments, distance to distribution center, inventory turnover, and labor cost.
+
 
     import numpy as np
     import pandas as pd
