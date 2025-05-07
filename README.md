@@ -78,8 +78,8 @@ The Clustering repository provides a comprehensive toolkit for both:
     
     print("First 10 warehouses with cluster labels:")
     print(df.head(10))
-    
-    First 10 warehouses with cluster labels:
+```
+First 10 warehouses with cluster labels:
        daily_shipments  dist_main_dc  inventory_turnover  labor_cost  \
     0         0.374540      0.950714            0.731994    0.598658   
     1         0.156019      0.155995            0.058084    0.866176   
@@ -92,7 +92,7 @@ The Clustering repository provides a comprehensive toolkit for both:
     8         0.065052      0.948886            0.965632    0.808397   
     9         0.304614      0.097672            0.684233    0.440152   
     
-    cluster_label  
+cluster_label  
     0              0  
     1              1  
     2              1  
@@ -123,7 +123,7 @@ The Clustering repository provides a comprehensive toolkit for both:
     plt.savefig('warehouse_dendrogram.png')  # Save the figure
     plt.show()
     
-    ![Plotly Visualization: Simulated Regression](CLUSTDEND.png)
+![Plotly Visualization: Simulated Regression](CLUSTDEND.png)
     
     #4. SCATTER PLOT OF CLUSTERS - With Multiple Views
     fig, axs = plt.subplots(2, 2, figsize=(14, 10))
@@ -165,21 +165,21 @@ The Clustering repository provides a comprehensive toolkit for both:
     cluster_analysis = df.groupby('cluster_label').mean()
     print(cluster_analysis)
     
-    Cluster Analysis:
+Cluster Analysis:
                    daily_shipments  dist_main_dc  inventory_turnover  labor_cost
     cluster_label                                                               
     0                     0.294771      0.471283            0.716870    0.442280
     1                     0.594360      0.593475            0.292030    0.823158
     2                     0.658900      0.353065            0.267801    0.208378
     
-    Cluster Variances:
+Cluster Variances:
                    daily_shipments  dist_main_dc  inventory_turnover  labor_cost
     cluster_label                                                               
     0                     0.054554      0.081251            0.043827    0.058466
     1                     0.081778      0.064972            0.073478    0.016156
     2                     0.087565      0.078477            0.021022    0.013241
     
-    Results exported to 'warehouse_clusters_results.csv'
+Results exported to 'warehouse_clusters_results.csv'
     
     #Add variance analysis to see within-cluster dispersion
     print("\nCluster Variances:")
