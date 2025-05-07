@@ -49,6 +49,8 @@ The Clustering repository provides a comprehensive toolkit for both:
 2. Distributed cluster management (Multi-Cluster System)
 3. These systems can be used independently for their respective purposes or integrated for enhanced capabilities. The following sections of this documentation provide detailed information on each component, their implementation, and usage examples.
 
+
+**Code Notebook:**
 ```
     import numpy as np
     import pandas as pd
