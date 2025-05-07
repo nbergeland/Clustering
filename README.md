@@ -10,11 +10,11 @@ The repository contains two primary systems:
 ## Repository Architecture
 The Clustering repository is organized around two main systems that serve distinct but potentially complementary purposes.
 ![Image](RA.png)
-
+**Diagram: High-level Repository Architecture**
 ## The ClusterDendrogram System
 The ClusterDendrogram System implements hierarchical clustering methods to analyze and visualize relationships between data points. It organizes data into a tree-like structure (dendrogram) showing how clusters merge or split at different similarity levels.
 ![Image](CDS.png)
-
+**Diagram: ClusterDendrogram System Components**
 Key capabilities:
 - Data preprocessing and normalization
 - Multiple hierarchical clustering algorithm implementations
